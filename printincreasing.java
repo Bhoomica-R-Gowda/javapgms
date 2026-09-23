@@ -1,0 +1,13 @@
+public class printincreasing {
+    public static void main(String args[]){
+        PrintIncreasing(15);
+    }
+    public static void PrintIncreasing(int n){
+        if(n==0){
+            return;
+        }
+        PrintIncreasing(n-1);
+        System.out.println(n);
+    }
+    
+}
