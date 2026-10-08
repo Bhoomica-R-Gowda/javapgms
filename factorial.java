@@ -1,7 +1,10 @@
+import java.util.Scanner;
 public class factorial {
     public static void main(String args[]){
-        int n=5;
-        System.out.println(fact(n));
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int n=input.nextInt();
+        System.out.println("Factorial = "+fact(n));
     }
     public static int fact(int n){
         if(n==0){
